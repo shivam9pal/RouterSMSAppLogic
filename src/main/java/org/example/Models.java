@@ -39,5 +39,33 @@
             return senderMob;
         }
     }
+
+    class RouteNode{
+        String stop;
+        List<RouteSegment> path;
+        String bus;
+
+        public RouteNode(String stop, List<RouteSegment> path ,String bus){
+
+            this.stop =stop;
+            this.path =path;
+            this.bus  =bus;
+
+        }
+    }
+
+    class RouteSegment{
+        String from;
+        String to;
+        String bus;
+
+        public RouteSegement(String from, String to ,String bus){
+            this.from=from;
+            this.to=to;
+            this.bus=bus;
+        }
+    }
+
+
     
 
