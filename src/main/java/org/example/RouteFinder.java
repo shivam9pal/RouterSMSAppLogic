@@ -38,14 +38,14 @@ public class RouteFinder {
         String currentBus = "";
         String from = "";
 
-        fro(int i=0;i<path.size();i++){
+        for(int i=0;i<path.size();i++){
             if(!seg.bus.equals(currentBus)){
                 if(!currentBus.isEmpty()) sb.append("\n");
                 sb.append(" take bus ").append(seg.bus).append(" from ").append(seg.from).append(" to ")
                 currentBus=seg.bus;
                 from=seg.from;
             }   
-            (i==path.size() -1 || !path.get(i+1).bus.equals(currentBus)){
+            if(i==path.size() -1 || !path.get(i+1).bus.equals(currentBus)){
                 sb.append(seg.to);
             }
          }

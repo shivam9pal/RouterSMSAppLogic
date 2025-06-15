@@ -4,7 +4,7 @@ public class MapInitializer {
         BusNetworkMap map = new BusNetworkMap();
         List<BusRoute> routes  = DBManager.fetchBusRoutes();
         for (BusRoute route : routes){
-            map.addRoute(rooute.getBusName(),route.getBusStops());
+            map.addRoute(route.getBusName(),route.getBusStops());
         }
         return map;
     }

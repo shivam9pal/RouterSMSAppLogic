@@ -4,6 +4,6 @@ public class MessageProcessor {
     }
 
     public static String processMessage(BusNetworkMap map, Message msg){
-        return routeFinder.findPath(map,msg.getSoirce(),msg.getDestination());
+        return routeFinder.findPath(map,msg.getSource(),msg.getDestination());
     }
 }

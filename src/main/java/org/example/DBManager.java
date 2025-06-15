@@ -22,8 +22,8 @@ public class DBManager {
             ResultSet rs=stmt.executeQuery("SELECT route_code ,route_details FROM busroutes");){
             while(rs.next()){
                 String bus=rs.getString("route_code");
-                List<String> stops=Array.asList(rs.getString(route_details).split("-"));
-                route.add(new BusRoute(bus,stops));
+                List<String> stops=Arrays.asList(rs.getString(route_details).split("-"));
+                routes.add(new BusRoute(bus,stops));
             }}
             catch(SQLException e){
                 e.printStackTrace();

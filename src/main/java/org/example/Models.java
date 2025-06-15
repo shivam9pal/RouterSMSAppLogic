@@ -10,7 +10,7 @@
         public String getBusName(){
             return busName;
         }
-        public List<String> getStops{
+        public List<String> getStops(){
             return stops;
         }
     
@@ -59,7 +59,7 @@
         String to;
         String bus;
 
-        public RouteSegement(String from, String to ,String bus){
+        public RouteSegment(String from, String to ,String bus){
             this.from=from;
             this.to=to;
             this.bus=bus;
